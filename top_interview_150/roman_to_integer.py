@@ -21,3 +21,8 @@ class Solution:
                 x += roman_to_number[s[i]]
         return x
     
+solution = Solution()
+
+result = solution.romanToInt("MXMXCIV")
+
+print(result)
