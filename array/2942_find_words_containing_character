@@ -1,0 +1,7 @@
+def findWordsContaining(words, x):
+    output = [index for index, word in enumerate(words) if x in word]
+    return output
+
+words1 = ["leet","code"]
+letter1 = 'l'
+print(findWordsContaining(words1, letter1))
