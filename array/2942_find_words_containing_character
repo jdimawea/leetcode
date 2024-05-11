@@ -5,3 +5,16 @@ def findWordsContaining(words, x):
 words1 = ["leet","code"]
 letter1 = 'l'
 print(findWordsContaining(words1, letter1))
+
+
+# faster 
+def findWordsContaining(words, x):
+    output = []
+    for index, word in enumerate(words):
+        if x in word:
+            output.append(index)
+    return output
+
+words1 = ["leet","code"]
+letter1 = 'e'
+print(findWordsContaining(words1, letter1))
